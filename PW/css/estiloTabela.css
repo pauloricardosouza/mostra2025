@@ -1,0 +1,19 @@
+table{
+    border-collapse: collapse; 
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd; /*Define bordas inferiores */
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:hover {
+    background-color: coral; /* Define a cor de fundo da linha no hover */
+}

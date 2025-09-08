@@ -1,0 +1,29 @@
+.divTabela {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-size: 12pt;
+    margin: 0 auto;
+    width: 75%; /* Altere para o valor da largura desejada. */
+    margin-bottom: 30px;
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border:none;
+}
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+}
+  
+th {
+    background-color: #4CAF50;
+    color: white;
+}

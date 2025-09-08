@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <link href="css/estiloNavBar.css" rel="stylesheet">
+        <link href="css/estiloForm.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="logotipo">
+            <img src="img/generico_logo.png" width="150">
+        </div>
+          
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="visualizarCompras.html" title="Visualizar suas Compras">Minhas Compras</a></li>
+            <li style="float:right; border-left: 1px solid white;"><a href="formLogin.html" class="active">Login</a></li>
+        </ul>
+          
+        <div class="divPrincipal">
+            <h3 style="text-align:center;">Acessar o Sistema:</h3>
+            <div class="divForm" style="box-shadow: 10px 10px 5px grey;">
+                <form action="#actionCadastrarUsuario.php" name="formUsuario" method="POST" enctype="multipart/form-data">
+                    
+                    <label for="emailUsuario"><b>Email:</b></label>
+                    <input type="email" id="emailUsuario" name="emailUsuario"><br><br>
+                    
+                    <label for="senhaUsuario"><b>Senha:</b></label>
+                    <input type="password" id="senhaUsuario" placeholder="Digite a sua senha" name="senhaUsuario" required><br><br>
+
+                    <p style="text-align: center;">
+                        Ainda não possui um cadastro? <a href="formUsuario.html">Clique aqui!</a>
+                    </p>
+                
+                    <input type="submit" value="Cadastrar">
+                </form>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <p>Interfaces desenvolvidas para as aulas de Tecnologias Web do Campus Telêmaco Borba</p>
+        </div>
+               
+  </body>
+</html>

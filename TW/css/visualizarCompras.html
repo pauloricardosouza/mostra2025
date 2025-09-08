@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Minhas Compras</title>
+        <meta charset="UTF-8">
+        <link href="css/estiloNavBar.css" rel="stylesheet">
+        <link href="css/estiloTabelaP.css" rel="stylesheet">
+        <style>
+            .info{
+                background-color: lightblue;
+                text-align: center;
+                font-size: 12pt;
+                margin: auto;
+                width: 50%;
+                margin-top:20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="logotipo">
+            <img src="img/generico_logo.png" width="150">
+        </div>
+            
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="visualizarCompras.html" title="Visualizar suas Compras" class="active">Minhas Compras</a></li>
+            <li style="float:right; border-left: 1px solid white;"><a href="formLogin.html">Login</a></li>
+        </ul>
+          
+        <div class="divPrincipal">
+            <p class="info" style="padding: 20pt;">Você possui 2 compras registradas:</p>
+            <div class="divTabela" style="box-shadow: 10px 10px 5px grey;">
+                <table border="1" width="100%">
+                    <tr>
+                        <th>ID</th>
+                        <th>FOTO</th>
+                        <th>NOME</th>
+                        <th>DATA</th>
+                        <th>HORA</th>
+                        <th>VALOR</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><img src="img/xbox360.webp" width="100"></td>
+                        <td>XBox 360</td>
+                        <td>26/05/2025</td>
+                        <td>14:46:11</td>
+                        <td>R$ 300.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><img src="img/tenisVans.jpg" width="100"></td>
+                        <td>Tênis Vans</td>
+                        <td>09/06/2025</td>
+                        <td>20:20:33</td>
+                        <td>R$ 380.00</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <p>Interfaces desenvolvidas para as aulas de Tecnologias Web do Campus Telêmaco Borba</p>
+        </div>              
+    </body>
+</html>

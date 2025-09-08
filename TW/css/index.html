@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <link href="css/estiloNavBar.css" rel="stylesheet">
+        <link href="css/estiloGrid.css" rel="stylesheet">
+        <link href="css/estiloForm.css" rel="stylesheet">
+        <style>
+            .info{
+                background-color: lightblue;
+                text-align: center;
+                font-size: 12pt;
+                margin: auto;
+                width: 50%;
+                margin-top:20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="logotipo">
+            <img src="img/generico_logo.png" width="150">
+        </div>
+          
+        <ul>
+            <li><a href="index.html" class="active">Página Inicial</a></li>
+            <li><a href="visualizarCompras.html" title="Visualizar suas Compras">Minhas Compras</a></li>
+            <li style="float:right; border-left: 1px solid white;"><a href="formLogin.html">Login</a></li>
+        </ul>
+          
+        <div class="divPrincipal">
+            <p class="info" style="padding: 20pt;">Há 4 produtos cadastrados:</p>
+
+            <form name="formFiltro" action="index.html" method="GET" class="divForm">
+                <label for="formFiltro">Selecione um Filtro:</label>
+                <select name="filtroProduto">
+                    <option value="todos">Visualizar todos os Produtos</option>
+                    <option value="disponiveis">Visualizar apenas Produtos Disponíveis</option>
+                    <option value="esgotados">Visualizar apenas Produtos Esgotados</option>
+                </select>
+                <input type="submit" value="Filtrar Produtos">
+            </form>
+
+            <div class="gallery">
+
+                <div class="grid-produtos">
+                    <div class="produto">
+                        <img src="img/xbox360.webp" alt="XBox 360" width="200">
+                        <h3>XBox 360</h3>
+                        <p>Valor: R$ 300,00</p>
+                        <input type="submit" value="Visualizar Produto">
+                    </div>
+                    <div class="produto">
+                        <img src="img/tenisVans.jpg" alt="Tênis Vans" width="200">
+                        <h3>Tênis Vans</h3>
+                        <p>Valor: R$ 380,00</p>
+                        <input type="submit" value="Visualizar Produto">
+                    </div>
+                    <div class="produto">
+                        <img src="img/livro_html_css.jpg" alt="Livro HTML e CSS" width="130">
+                        <h3>Livro HTML e CSS</h3>
+                        <p>Valor: R$ 150,00</p>
+                        <input type="submit" value="Visualizar Produto">
+                    </div>
+                    <div class="produto">
+                        <img src="img/xbox360.webp" alt="XBox 360" width="200">
+                        <h3>XBox 360</h3>
+                        <p>Valor: R$ 100,00</p>
+                        <input type="submit" value="Visualizar Produto">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="rodape">
+            <p>Interfaces desenvolvidas para as aulas de Tecnologias Web do Campus Telêmaco Borba</p>
+        </div>
+               
+  </body>
+</html>

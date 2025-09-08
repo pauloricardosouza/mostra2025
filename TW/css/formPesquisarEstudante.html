@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pesquisar Estudantes</title>
+        <meta charset="UTF-8">
+        <link href="css/estiloNavBar.css" rel="stylesheet">
+        <link href="css/estiloForm.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="header">
+            <img src="img/logoIFPR.png" width="100">
+        </div>
+            
+        <ul>
+            <li><a href="formEstudante.html">Cadastrar Estudante</a></li>
+            <li><a href="listarEstudantes.html">Listar Estudantes</a></li>
+            <li><a class="active" href="formPesquisarEstudante.html">Pesquisar Estudante</a></li>
+            <li style="float:right; border-left: 1px solid white;"><a href="formLogin.html">Login</a></li>
+        </ul>
+            
+        <div class="divPrincipal">
+            <h3 style="text-align:center;">Pesquisar estudante por NOME ou MÊS DE NASCIMENTO:</h3>
+            <div class="divForm" style="box-shadow: 10px 10px 5px grey;">
+                <form action="pesquisarEstudante.html" method="POST">
+                    <select name="tipoPesquisa">
+                        <option value="nome">Nome</option>
+                        <option value="mesNascimento">Mês de Nascimento</option>
+                    </select>
+                    
+                    <input type="text" name="txtPesquisa" placeholder="Informe um NOME ou MÊS para ser pesquisado!" size="50" required>
+                    
+                    <input type="submit" value="Pesquisar">
+                </form>
+            </div>
+        </div>
+        
+        <div class="rodape">
+            <p>Interfaces desenvolvidas para as aulas de Tecnologias Web do Campus Telêmaco Borba</p>
+        </div>       
+    </body>
+</html>

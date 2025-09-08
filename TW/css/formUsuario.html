@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <link href="css/estiloNavBar.css" rel="stylesheet">
+        <link href="css/estiloForm.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="logotipo">
+            <img src="img/generico_logo.png" width="150">
+        </div>
+          
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="visualizarCompras.html" title="Visualizar suas Compras">Minhas Compras</a></li>
+            <li style="float:right; border-left: 1px solid white;"><a href="formLogin.html" class="active">Login</a></li>
+        </ul>
+          
+        <div class="divPrincipal">
+            <h3 style="text-align:center;">Cadastro de Usuário</h3>
+            <div class="divForm" style="box-shadow: 10px 10px 5px grey;">
+                <form action="#actionCadastrarUsuario.php" name="formUsuario" method="POST" enctype="multipart/form-data">
+                    <label for="fotoUsuario"><b>Foto:</b></label><br>
+                    <input type="file" id="fotoUsuario" name="fotoUsuario"><br><br>
+
+                    <label for="nomeUsuario"><b>*Nome Completo:</b></label>
+                    <input type="text" id="nomeUsuario" name="nomeUsuario" required><br><br>
+
+                    <label for="dataNascimentoUsuario"><b>Data de Nascimento:</b></label><br>
+                    <input type="date" id="dataNascimentoUsuario" name="dataNascimentoUsuario" required><br><br>
+
+                    <label for="cidadeUsuario">Cidade:</label>
+                    <select name="cidadeUsuario">
+                        <option value="curiuva">Curiúva</option>
+                        <option value="imbau">Imbaú</option>
+                        <option value="ortigueira">Ortigueira</option>
+                        <option value="reserva">Reserva</option>
+                        <option value="telemaco" selected>Telêmaco Borba</option>
+                        <option value="tibagi">Tibagi</option>
+                    </select><br><br>
+                    
+                    <label for="telefoneUsuario"><b>Telefone:</b></label>
+                    <input type="text" id="telefoneUsuario" name="telefoneUsuario" placeholder="(XX) XXXXX-XXXX"><br><br>
+                    
+                    <label for="emailUsuario"><b>Email:</b></label>
+                    <input type="email" id="emailUsuario" name="emailUsuario"><br><br>
+                    
+                    <label for="senhaUsuario"><b>Senha:</b></label>
+                    <input type="password" id="senhaUsuario" placeholder="Digite uma senha" name="senhaUsuario" required><br><br>
+                    
+                    <label for="confirmarSenhaUsuario"><b>Confirme a senha:</b></label>
+                    <input type="password" id="confirmarSenhaUsuario" placeholder="Confirme a senha" name="confirmarSenhaUsuario" required><br><br>
+                    
+                    <input type="submit" value="Cadastrar">
+                </form>
+            </div>
+        </div>
+
+        <div class="rodape">
+            <p>Interfaces desenvolvidas para as aulas de Tecnologias Web do Campus Telêmaco Borba</p>
+        </div>
+               
+  </body>
+</html>

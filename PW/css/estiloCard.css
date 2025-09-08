@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box; /* Inclui bordas e padding na largura e altura */
+}
+
+.container {
+    display: flex; /* Flexbox aplicado ao container */
+    justify-content: space-between; /* Espaça os cards uniformemente */
+    gap: 20px; /* Espaçamento de 20 px entre os cards */
+    max-width: 100%; /* Define 100% da largura do container */
+    margin: 50px auto;
+}
+
+.card {
+    background-color: white; /* Define cor de fundo do card */
+    border: 1px solid lightgray; /* Define cor da borda */
+    border-radius: 8px; /* Define arredondamento do card */
+    padding: 20px; /* Define espaçamento */
+    width: 24%; /* Define a largura de cada um dos 4 cards */
+    box-shadow: 0 4px 8px #aaa; /*Define a sombra dos cards */
+    text-align: center; /*Alinha os textos dos cards ao centro */
+    transition: transform 0.3s; /* Define a transição do card */
+}
+
+.card:hover{
+    transform: translateY(-10px); /*Move o card levemente para cima no hover */
+}

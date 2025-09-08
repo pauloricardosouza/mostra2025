@@ -1,0 +1,51 @@
+.containerForm {
+    background-color: #f2f2f2; /*Cor de fundo da div */
+    font-size: 12pt; /*Tamanho da fonte da div */
+    padding: 20px; /*Espaçamento da div */
+    margin: 0 auto; /*Define margem como ZERO */
+    width: 50%; /* Define a largura como 50% da div superior */
+    margin-bottom: 30px; /*Define a margem inferior */
+    border-radius: 5px; /*Define arredondamento das bordas */
+    box-shadow: 10px 10px 5px grey; /* Define sombras do elemento */
+}
+
+label {
+    font-weight: bold;/* Deixa o texto em negrito */
+}
+
+input[type=email], [type=password], [type=text], select, textarea {
+    width: 100%; /* Define largura */
+    padding: 12px 20px;/*Define espaçamento */
+    margin: 8px 0; /*Define margem */
+    display: inline-block; /* Define como bloco */
+    border: 1px solid #ccc; /*Define bordas  */
+    border-radius: 4px; /* Bordas arrendondadas */
+    box-sizing: border-box; /*Limita o tamanho */
+    resize: none; /* Define redimensionamento como nenhum */
+}
+
+button[type=submit] {
+    width: 100%; /*Define a largura*/
+    background-color: green; /*Define a cor */
+    color: white; /*Define a cor das letras*/
+    padding: 14px 20px; /*Define espaçamento */
+    margin: 8px 0; /*Define margens */
+    border: none; /* Define bordas como "nenhum" */
+    border-radius: 4px; /*Arredondamento das bordas*/
+    cursor: pointer; /* Altera o cursor do mouse */
+}
+
+button[type=submit]:hover {
+    background-color: limegreen;
+}
+
+input[type="file"]{
+    width: 40%; /* Define a largura do elemento a ser estilizado */
+    background-color: green; /* Define a cor do elemento */
+    color: white; /* Define a cor do texto do elemento */
+    padding: 14px 20px; /* Define espaçamentos X e Y */
+    margin: 8px 0; /* Define margens X e Y */
+    border: none; /* Remove bordas */
+    border-radius: 4px; /* Define arredondamento das bordas */
+    cursor: pointer; /* Altera o cursor do mouse */
+}
